@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Verdana', sans-serif;
+      color: #eee;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+    .happy-birthday {
+      font-size: 3em;
+      margin-top: 50px;
+      animation: fadeIn 2s ease-in-out, bounce 2s infinite alternate;
+      text-shadow: 0 0 10px #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-20px); }
+    }
+    .verses {
+      margin: 40px 0;
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .verse {
+      margin: 10px 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      animation: slideIn 1s ease-out;
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .collage {
+      width: 90%;
+      max-width: 800px;
+      height: 400px;
+      background: #222;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .collage p {
+      color: #aaa;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="happy-birthday">Happy Birthday!</div>
+    <div class="verses">
+      <div class="verse"><strong>Numbers 6:24-26:</strong> "The Lord bless you and keep you..."</div>
+      <div class="verse"><strong>Psalm 46:5:</strong> "God is within her, she will not fall..."</div>
+      <div class="verse"><strong>Proverbs 31:25:</strong> "She is clothed with strength and dignity..."</div>
+      <div class="verse"><strong>Proverbs 31:29:</strong> "Many women do noble things, but you surpass them all."</div>
+    </div>
+    <div class="collage">
+      <p>Memory Collage Placeholder</p>
+    </div>
+  </div>
+</body>
+</html>
